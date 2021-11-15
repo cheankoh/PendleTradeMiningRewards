@@ -1,0 +1,35 @@
+{
+  blockNumber: 12648707,
+  blockHash: '0x32655c016929bd4ac319f08f7e575ee163e4deea5e2a44c32cde22b40ca10e11',
+  transactionIndex: 57,
+  removed: false,
+  address: '0x1b6d3E5Da9004668E14Ca39d1553E9a46Fe842B3',
+  data: '0x000000000000000000000000a0b86991c6218b36c1d19d4a2e9eb0ce3606eb48000000000000000000000000b7defe73528942793649c0a950ec528f6615904700000000000000000000000000000000000000000000000000000000001e848000000000000000000000000000000000000000000000000000000023cd944329000000000000000000000000b26c86330fc7f97533051f2f8cd0a90c2e82b5ee',
+  topics: [
+    '0xf5fd10e802251a919c2bfd2cfc15e2526d3864c819e2b4dc346ca1ade0f51658',
+    '0x00000000000000000000000082c9d29739333258f08cd3957d2a7ac7f4d53fab'
+  ],
+  transactionHash: '0xd99e3bf852cd1cadfbf1cbf96abf960b1c415f1d88b3078433c8674a08f1e268',
+  logIndex: 146,
+  removeListener: [Function (anonymous)],
+  getBlock: [Function (anonymous)],
+  getTransaction: [Function (anonymous)],
+  getTransactionReceipt: [Function (anonymous)],
+  event: 'SwapEvent',
+  eventSignature: 'SwapEvent(address,address,address,uint256,uint256,address)',
+  decode: [Function (anonymous)],
+  args: [
+    '0x82c9D29739333258f08cD3957d2a7ac7f4d53fAb',
+    '0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48',
+    '0xb7deFe73528942793649c0A950Ec528f66159047',
+    BigNumber { _hex: '0x1e8480', _isBigNumber: true },
+    BigNumber { _hex: '0x23cd944329', _isBigNumber: true },
+    '0xB26C86330FC7F97533051F2F8cD0a90C2E82b5EE',
+    trader: '0x82c9D29739333258f08cD3957d2a7ac7f4d53fAb',
+    inToken: '0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48',
+    outToken: '0xb7deFe73528942793649c0A950Ec528f66159047',
+    exactIn: BigNumber { _hex: '0x1e8480', _isBigNumber: true },
+    exactOut: BigNumber { _hex: '0x23cd944329', _isBigNumber: true },
+    market: '0xB26C86330FC7F97533051F2F8cD0a90C2E82b5EE'
+  ]
+}

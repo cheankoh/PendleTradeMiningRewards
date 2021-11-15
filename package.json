@@ -1,0 +1,30 @@
+{
+  "name": "pendletrademiningrewards",
+  "version": "1.0.0",
+  "description": "A Pendle reward distribution system",
+  "main": "events.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cheankoh/PendleTradeMiningRewards.git"
+  },
+  "author": "Chean Koh",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/cheankoh/PendleTradeMiningRewards/issues"
+  },
+  "homepage": "https://github.com/cheankoh/PendleTradeMiningRewards#readme",
+  "dependencies": {
+    "ethers": "^5.5.1",
+    "npm": "^8.1.3",
+    "yarn": "^1.22.17"
+  },
+  "devDependencies": {
+    "@types/chai": "^4.2.22",
+    "@types/mocha": "^9.0.0",
+    "@types/node": "^16.11.7",
+    "alchemy": "^0.0.8",
+    "chai": "^4.3.4",
+    "ts-node": "^10.4.0",
+    "typescript": "^4.4.4"
+  }
+}
