@@ -10,25 +10,20 @@ https://api.etherscan.io/api?module=contract&action=getabi&address=0x1b6d3E5Da90
 
 const poolABI = JSON.parse(fs.readFileSync('./abi/PendleRouter.abi', 'utf8'));
 const zeroAddress = '0x0000000000000000000000000000000000000000';
-var startTime = new Date('2021-10-21T08:00:00') // SG time 14th Nov 00:00
+var startTime = new Date('2021-11-01T08:00:00') // SG time 14th Nov 00:00
 const now = (Date.now() / 1000);
 const epoch = 14; //days
-let numEpoch = 1;
 
 async function main() {
     const rpcUrl = 'https://eth-mainnet.alchemyapi.io/v2/jeh6EswMB-1UertvxXPspJB5ZQ4Rhnp7'; // Alchemy node
     const provider = new ethers.providers.JsonRpcProvider(rpcUrl);
     const startBlock = 13515454;
     const latestBlock = await provider.getBlockNumber();
-    console.log(now);
-    console.log((await provider.getBlock(latestBlock)).timestamp);
-    console.log((await provider.getBlock(startBlock)).timestamp);
     const contract = '0x1b6d3E5Da9004668E14Ca39d1553E9a46Fe842B3';
     let instance;
     let Events;
     let pages;
     let logs;
-    let resultEpochArray = new Object;
     let result = new Object;
     instance = new ethers.Contract(contract, poolABI, provider);
     Events = await instance.filters.SwapEvent();
@@ -37,6 +32,7 @@ async function main() {
     let start = startBlock;
     let end = start + 10000;
     let blockPointer = startBlock;
+    let completed = false;
     for (let page = 1; page <= pages; page++) {
         logs = await instance.queryFilter(Events, start, end);
 
@@ -55,26 +51,24 @@ async function main() {
                 if ((nextEpoch.getTime() / 1000) < timeStamp) {
                     console.log(result);
                     startTime.setDate(startTime.getDate() + epoch);
-                    resultEpochArray[numEpoch] = result;
-                    numEpoch++;
-                    result = {};
+                    completed = true;
+                    break;
                 }
             }
             // Don't care about blocks that are less than start time
             if (timeStamp < parseInt((startTime.getTime() / 1000).toString())) continue;
-
             // Calculate rewards
             let traderAddress = logs[j].args.trader;
             if (!result.hasOwnProperty(traderAddress)) result[traderAddress] = 1;
             else result[traderAddress]++;
         }
-
+        if (completed) break;
         start = end;
         end = end + 10000;
     }
-    resultEpochArray[numEpoch] = result;
+
     // convert JSON object to string
-    let finalResult = JSON.stringify(resultEpochArray);
+    let finalResult = JSON.stringify(result, null, '\t');
 
     // write JSON string to a file
     fs.writeFile('rewards.json', finalResult, (err) => {

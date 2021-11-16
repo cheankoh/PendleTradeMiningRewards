@@ -33,3 +33,19 @@
     market: '0xB26C86330FC7F97533051F2F8cD0a90C2E82b5EE'
   ]
 }
+
+`
+
+function _epochOf (uint256 t) internal view returns (uint256) {
+
+if (t < startTime) return 0;
+
+return (t.sub(startTime)).div(epochDuration).add(1);
+
+}
+
+```
+
+
+
+Where you define startTime as the epoch time where you want to start the trade mining incentives. epochDuration is how long an epoch is in seconds. For 2 weeks, it's 1209600.
