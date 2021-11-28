@@ -3,7 +3,7 @@ For each trade a user does on Pendle’s AMM, he is entitled to retroactively re
 
 ## Run the program
 Install the dependencies using npm or yarn.
-Then, run node events.js
+Then, run node events.js (This will take some time to run)
 It will generate rewards.json which contains the data needed to build a merkle distribution tree
 
 ## Build the merkle tree using rewards.json
