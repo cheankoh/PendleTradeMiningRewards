@@ -44,11 +44,7 @@ npx ts-node ./scripts/generate-merkle-root.ts --input rewards.json
 #### merkle-distribution.json
 ## Note that the rewards.json and merkle-distribution.json are pushed to the repository beforehand and hence above steps are optional
 
-## To run the test
+### To run the test on deploying and claim
 ```shell
 yarn test
 ```
-=======
-### To run the test on deploying and claim
-yarn test
-
