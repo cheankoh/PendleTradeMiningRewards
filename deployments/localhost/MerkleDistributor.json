@@ -1,0 +1,179 @@
+{
+  "address": "0x9fE46736679d2D9a65F0992F2272dE9f3c7fa6e0",
+  "abi": [
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "token_",
+          "type": "address"
+        },
+        {
+          "internalType": "bytes32",
+          "name": "merkleRoot_",
+          "type": "bytes32"
+        }
+      ],
+      "stateMutability": "nonpayable",
+      "type": "constructor"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": false,
+          "internalType": "uint256",
+          "name": "index",
+          "type": "uint256"
+        },
+        {
+          "indexed": false,
+          "internalType": "address",
+          "name": "account",
+          "type": "address"
+        },
+        {
+          "indexed": false,
+          "internalType": "uint256",
+          "name": "amount",
+          "type": "uint256"
+        }
+      ],
+      "name": "Claimed",
+      "type": "event"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "index",
+          "type": "uint256"
+        },
+        {
+          "internalType": "address",
+          "name": "account",
+          "type": "address"
+        },
+        {
+          "internalType": "uint256",
+          "name": "amount",
+          "type": "uint256"
+        },
+        {
+          "internalType": "bytes32[]",
+          "name": "merkleProof",
+          "type": "bytes32[]"
+        }
+      ],
+      "name": "claim",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "index",
+          "type": "uint256"
+        }
+      ],
+      "name": "isClaimed",
+      "outputs": [
+        {
+          "internalType": "bool",
+          "name": "",
+          "type": "bool"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "merkleRoot",
+      "outputs": [
+        {
+          "internalType": "bytes32",
+          "name": "",
+          "type": "bytes32"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "token",
+      "outputs": [
+        {
+          "internalType": "address",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    }
+  ],
+  "transactionHash": "0xf92c11be081964425a1ca02c9c318e882b6c40ac425c24e56e0fa06ea8436b13",
+  "receipt": {
+    "to": null,
+    "from": "0xf39Fd6e51aad88F6F4ce6aB8827279cffFb92266",
+    "contractAddress": "0x9fE46736679d2D9a65F0992F2272dE9f3c7fa6e0",
+    "transactionIndex": 0,
+    "gasUsed": "440251",
+    "logsBloom": "0x00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+    "blockHash": "0x1526986a68deba3e34487f51acbdd8ad77e3d8b058b8d359abcef2f62c8091a3",
+    "transactionHash": "0xf92c11be081964425a1ca02c9c318e882b6c40ac425c24e56e0fa06ea8436b13",
+    "logs": [],
+    "blockNumber": 3,
+    "cumulativeGasUsed": "440251",
+    "status": 1,
+    "byzantium": true
+  },
+  "args": [
+    "0xe7f1725E7734CE288F8367e1Bb143E90bb3F0512",
+    "0x26f14510706216aef61c12e8448039c4b7e639f530ac317a76cac5e8247ce5e7"
+  ],
+  "solcInputHash": "9c87ce1f1633c43fa78ee988689e283f",
+  "metadata": "{\"compiler\":{\"version\":\"0.8.0+commit.c7dfd78e\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[{\"internalType\":\"address\",\"name\":\"token_\",\"type\":\"address\"},{\"internalType\":\"bytes32\",\"name\":\"merkleRoot_\",\"type\":\"bytes32\"}],\"stateMutability\":\"nonpayable\",\"type\":\"constructor\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":false,\"internalType\":\"uint256\",\"name\":\"index\",\"type\":\"uint256\"},{\"indexed\":false,\"internalType\":\"address\",\"name\":\"account\",\"type\":\"address\"},{\"indexed\":false,\"internalType\":\"uint256\",\"name\":\"amount\",\"type\":\"uint256\"}],\"name\":\"Claimed\",\"type\":\"event\"},{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"index\",\"type\":\"uint256\"},{\"internalType\":\"address\",\"name\":\"account\",\"type\":\"address\"},{\"internalType\":\"uint256\",\"name\":\"amount\",\"type\":\"uint256\"},{\"internalType\":\"bytes32[]\",\"name\":\"merkleProof\",\"type\":\"bytes32[]\"}],\"name\":\"claim\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"index\",\"type\":\"uint256\"}],\"name\":\"isClaimed\",\"outputs\":[{\"internalType\":\"bool\",\"name\":\"\",\"type\":\"bool\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"merkleRoot\",\"outputs\":[{\"internalType\":\"bytes32\",\"name\":\"\",\"type\":\"bytes32\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"token\",\"outputs\":[{\"internalType\":\"address\",\"name\":\"\",\"type\":\"address\"}],\"stateMutability\":\"view\",\"type\":\"function\"}],\"devdoc\":{\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"contracts/MerkleDistributor.sol\":\"MerkleDistributor\"},\"evmVersion\":\"istanbul\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\",\"useLiteralContent\":true},\"optimizer\":{\"enabled\":true,\"runs\":200},\"remappings\":[]},\"sources\":{\"@openzeppelin/contracts/token/ERC20/IERC20.sol\":{\"content\":\"// SPDX-License-Identifier: MIT\\n\\npragma solidity ^0.8.0;\\n\\n/**\\n * @dev Interface of the ERC20 standard as defined in the EIP.\\n */\\ninterface IERC20 {\\n    /**\\n     * @dev Returns the amount of tokens in existence.\\n     */\\n    function totalSupply() external view returns (uint256);\\n\\n    /**\\n     * @dev Returns the amount of tokens owned by `account`.\\n     */\\n    function balanceOf(address account) external view returns (uint256);\\n\\n    /**\\n     * @dev Moves `amount` tokens from the caller's account to `recipient`.\\n     *\\n     * Returns a boolean value indicating whether the operation succeeded.\\n     *\\n     * Emits a {Transfer} event.\\n     */\\n    function transfer(address recipient, uint256 amount) external returns (bool);\\n\\n    /**\\n     * @dev Returns the remaining number of tokens that `spender` will be\\n     * allowed to spend on behalf of `owner` through {transferFrom}. This is\\n     * zero by default.\\n     *\\n     * This value changes when {approve} or {transferFrom} are called.\\n     */\\n    function allowance(address owner, address spender) external view returns (uint256);\\n\\n    /**\\n     * @dev Sets `amount` as the allowance of `spender` over the caller's tokens.\\n     *\\n     * Returns a boolean value indicating whether the operation succeeded.\\n     *\\n     * IMPORTANT: Beware that changing an allowance with this method brings the risk\\n     * that someone may use both the old and the new allowance by unfortunate\\n     * transaction ordering. One possible solution to mitigate this race\\n     * condition is to first reduce the spender's allowance to 0 and set the\\n     * desired value afterwards:\\n     * https://github.com/ethereum/EIPs/issues/20#issuecomment-263524729\\n     *\\n     * Emits an {Approval} event.\\n     */\\n    function approve(address spender, uint256 amount) external returns (bool);\\n\\n    /**\\n     * @dev Moves `amount` tokens from `sender` to `recipient` using the\\n     * allowance mechanism. `amount` is then deducted from the caller's\\n     * allowance.\\n     *\\n     * Returns a boolean value indicating whether the operation succeeded.\\n     *\\n     * Emits a {Transfer} event.\\n     */\\n    function transferFrom(\\n        address sender,\\n        address recipient,\\n        uint256 amount\\n    ) external returns (bool);\\n\\n    /**\\n     * @dev Emitted when `value` tokens are moved from one account (`from`) to\\n     * another (`to`).\\n     *\\n     * Note that `value` may be zero.\\n     */\\n    event Transfer(address indexed from, address indexed to, uint256 value);\\n\\n    /**\\n     * @dev Emitted when the allowance of a `spender` for an `owner` is set by\\n     * a call to {approve}. `value` is the new allowance.\\n     */\\n    event Approval(address indexed owner, address indexed spender, uint256 value);\\n}\\n\",\"keccak256\":\"0x027b891937d20ccf213fdb9c31531574256de774bda99d3a70ecef6e1913ed2a\",\"license\":\"MIT\"},\"@openzeppelin/contracts/utils/cryptography/MerkleProof.sol\":{\"content\":\"// SPDX-License-Identifier: MIT\\n\\npragma solidity ^0.8.0;\\n\\n/**\\n * @dev These functions deal with verification of Merkle Trees proofs.\\n *\\n * The proofs can be generated using the JavaScript library\\n * https://github.com/miguelmota/merkletreejs[merkletreejs].\\n * Note: the hashing algorithm should be keccak256 and pair sorting should be enabled.\\n *\\n * See `test/utils/cryptography/MerkleProof.test.js` for some examples.\\n */\\nlibrary MerkleProof {\\n    /**\\n     * @dev Returns true if a `leaf` can be proved to be a part of a Merkle tree\\n     * defined by `root`. For this, a `proof` must be provided, containing\\n     * sibling hashes on the branch from the leaf to the root of the tree. Each\\n     * pair of leaves and each pair of pre-images are assumed to be sorted.\\n     */\\n    function verify(\\n        bytes32[] memory proof,\\n        bytes32 root,\\n        bytes32 leaf\\n    ) internal pure returns (bool) {\\n        bytes32 computedHash = leaf;\\n\\n        for (uint256 i = 0; i < proof.length; i++) {\\n            bytes32 proofElement = proof[i];\\n\\n            if (computedHash <= proofElement) {\\n                // Hash(current computed hash + current element of the proof)\\n                computedHash = keccak256(abi.encodePacked(computedHash, proofElement));\\n            } else {\\n                // Hash(current element of the proof + current computed hash)\\n                computedHash = keccak256(abi.encodePacked(proofElement, computedHash));\\n            }\\n        }\\n\\n        // Check if the computed hash (root) is equal to the provided root\\n        return computedHash == root;\\n    }\\n}\\n\",\"keccak256\":\"0x86c1bbdc6813c021e138da527c44d2615931b0e5c7fa2f58369846ed288324a8\",\"license\":\"MIT\"},\"contracts/MerkleDistributor.sol\":{\"content\":\"// SPDX-License-Identifier: UNLICENSED\\r\\npragma solidity ^0.8.0;\\r\\n\\r\\nimport '@openzeppelin/contracts/utils/cryptography/MerkleProof.sol';\\r\\nimport '@openzeppelin/contracts/token/ERC20/IERC20.sol';\\r\\nimport './interfaces/IMerkleDistributor.sol';\\r\\n\\r\\ncontract MerkleDistributor is IMerkleDistributor {\\r\\n    address public immutable override token;\\r\\n    bytes32 public immutable override merkleRoot;\\r\\n\\r\\n    // This is a packed array of booleans.\\r\\n    mapping(uint256 => uint256) private claimedBitMap;\\r\\n\\r\\n    constructor(address token_, bytes32 merkleRoot_) public {\\r\\n        token = token_;\\r\\n        merkleRoot = merkleRoot_;\\r\\n    }\\r\\n\\r\\n    function isClaimed(uint256 index) public view override returns (bool) {\\r\\n        uint256 claimedWordIndex = index / 256;\\r\\n        uint256 claimedBitIndex = index % 256;\\r\\n        uint256 claimedWord = claimedBitMap[claimedWordIndex];\\r\\n        uint256 mask = (1 << claimedBitIndex);\\r\\n        return claimedWord & mask == mask;\\r\\n    }\\r\\n\\r\\n    function _setClaimed(uint256 index) private {\\r\\n        uint256 claimedWordIndex = index / 256;\\r\\n        uint256 claimedBitIndex = index % 256;\\r\\n        claimedBitMap[claimedWordIndex] = claimedBitMap[claimedWordIndex] | (1 << claimedBitIndex);\\r\\n    }\\r\\n\\r\\n    function claim(\\r\\n        uint256 index,\\r\\n        address account,\\r\\n        uint256 amount,\\r\\n        bytes32[] calldata merkleProof\\r\\n    ) external override {\\r\\n        require(!isClaimed(index), 'MerkleDistributor: Drop already claimed.');\\r\\n\\r\\n        // Verify the merkle proof.\\r\\n        bytes32 node = keccak256(abi.encodePacked(index, account, amount));\\r\\n        require(MerkleProof.verify(merkleProof, merkleRoot, node), 'MerkleDistributor: Invalid proof.');\\r\\n\\r\\n        // Mark it claimed and send the token.\\r\\n        _setClaimed(index);\\r\\n        require(IERC20(token).transfer(account, amount), 'MerkleDistributor: Transfer failed.');\\r\\n\\r\\n        emit Claimed(index, account, amount);\\r\\n    }\\r\\n}\\r\\n\",\"keccak256\":\"0xbecb21183437f609c3a64a75f6938b2f0da11d1a36091faf7e1f09a2579caef5\",\"license\":\"UNLICENSED\"},\"contracts/interfaces/IMerkleDistributor.sol\":{\"content\":\"// SPDX-License-Identifier: UNLICENSED\\r\\npragma solidity ^0.8.0;\\r\\n\\r\\n// Allows anyone to claim a token if they exist in a merkle root.\\r\\ninterface IMerkleDistributor {\\r\\n    // Returns the address of the token distributed by this contract.\\r\\n    function token() external view returns (address);\\r\\n    // Returns the merkle root of the merkle tree containing account balances available to claim.\\r\\n    function merkleRoot() external view returns (bytes32);\\r\\n    // Returns true if the index has been marked claimed.\\r\\n    function isClaimed(uint256 index) external view returns (bool);\\r\\n    // Claim the given amount of the token to the given address. Reverts if the inputs are invalid.\\r\\n    function claim(uint256 index, address account, uint256 amount, bytes32[] calldata merkleProof) external;\\r\\n\\r\\n    // This event is triggered whenever a call to #claim succeeds.\\r\\n    event Claimed(uint256 index, address account, uint256 amount);\\r\\n}\",\"keccak256\":\"0xcd14fb533624671d6f7fc88159a72fc20d6fb1b4ce3e2ee58e789056e6a9323c\",\"license\":\"UNLICENSED\"}},\"version\":1}",
+  "bytecode": "0x60c060405234801561001057600080fd5b506040516107af3803806107af83398101604081905261002f9161004a565b60609190911b6001600160601b03191660805260a052610082565b6000806040838503121561005c578182fd5b82516001600160a01b0381168114610072578283fd5b6020939093015192949293505050565b60805160601c60a0516106f76100b86000396000818161014c015261029d0152600081816101b3015261030201526106f76000f3fe608060405234801561001057600080fd5b506004361061004c5760003560e01c80632e7ba6ef146100515780632eb4a7ab146100665780639e34070f14610084578063fc0c546a146100a4575b600080fd5b61006461005f36600461045c565b6100b9565b005b61006e61029b565b60405161007b9190610568565b60405180910390f35b610097610092366004610444565b6102bf565b60405161007b919061055d565b6100ac610300565b60405161007b9190610530565b6100c2856102bf565b156100e85760405162461bcd60e51b81526004016100df90610571565b60405180910390fd5b60008585856040516020016100ff93929190610508565b6040516020818303038152906040528051906020012090506101778383808060200260200160405190810160405280939291908181526020018383602002808284376000920191909152507f000000000000000000000000000000000000000000000000000000000000000092508591506103249050565b6101935760405162461bcd60e51b81526004016100df906105b9565b61019c866103df565b60405163a9059cbb60e01b81526001600160a01b037f0000000000000000000000000000000000000000000000000000000000000000169063a9059cbb906101ea9088908890600401610544565b602060405180830381600087803b15801561020457600080fd5b505af1158015610218573d6000803e3d6000fd5b505050506040513d601f19601f8201168201806040525081019061023c919061041d565b6102585760405162461bcd60e51b81526004016100df906105fa565b7f4ec90e965519d92681267467f775ada5bd214aa92c0dc93d90a5e880ce9ed02686868660405161028b9392919061063d565b60405180910390a1505050505050565b7f000000000000000000000000000000000000000000000000000000000000000081565b6000806102ce6101008461065c565b905060006102de61010085610697565b60009283526020839052604090922054600190921b9182169091149392505050565b7f000000000000000000000000000000000000000000000000000000000000000081565b600081815b85518110156103d457600086828151811061035457634e487b7160e01b600052603260045260246000fd5b602002602001015190508083116103955782816040516020016103789291906104fa565b6040516020818303038152906040528051906020012092506103c1565b80836040516020016103a89291906104fa565b6040516020818303038152906040528051906020012092505b50806103cc81610670565b915050610329565b509092149392505050565b60006103ed6101008361065c565b905060006103fd61010084610697565b6000928352602083905260409092208054600190931b9092179091555050565b60006020828403121561042e578081fd5b8151801515811461043d578182fd5b9392505050565b600060208284031215610455578081fd5b5035919050565b600080600080600060808688031215610473578081fd5b8535945060208601356001600160a01b0381168114610490578182fd5b935060408601359250606086013567ffffffffffffffff808211156104b3578283fd5b818801915088601f8301126104c6578283fd5b8135818111156104d4578384fd5b89602080830285010111156104e7578384fd5b9699959850939650602001949392505050565b918252602082015260400190565b92835260609190911b6bffffffffffffffffffffffff19166020830152603482015260540190565b6001600160a01b0391909116815260200190565b6001600160a01b03929092168252602082015260400190565b901515815260200190565b90815260200190565b60208082526028908201527f4d65726b6c654469737472696275746f723a2044726f7020616c72656164792060408201526731b630b4b6b2b21760c11b606082015260800190565b60208082526021908201527f4d65726b6c654469737472696275746f723a20496e76616c69642070726f6f666040820152601760f91b606082015260800190565b60208082526023908201527f4d65726b6c654469737472696275746f723a205472616e73666572206661696c60408201526232b21760e91b606082015260800190565b9283526001600160a01b03919091166020830152604082015260600190565b60008261066b5761066b6106ab565b500490565b600060001982141561069057634e487b7160e01b81526011600452602481fd5b5060010190565b6000826106a6576106a66106ab565b500690565b634e487b7160e01b600052601260045260246000fdfea2646970667358221220f45e651427c3cc1bfa0694b5e3f890162b28e683be4cbe0f9dbd9ecabb4415eb64736f6c63430008000033",
+  "deployedBytecode": "0x608060405234801561001057600080fd5b506004361061004c5760003560e01c80632e7ba6ef146100515780632eb4a7ab146100665780639e34070f14610084578063fc0c546a146100a4575b600080fd5b61006461005f36600461045c565b6100b9565b005b61006e61029b565b60405161007b9190610568565b60405180910390f35b610097610092366004610444565b6102bf565b60405161007b919061055d565b6100ac610300565b60405161007b9190610530565b6100c2856102bf565b156100e85760405162461bcd60e51b81526004016100df90610571565b60405180910390fd5b60008585856040516020016100ff93929190610508565b6040516020818303038152906040528051906020012090506101778383808060200260200160405190810160405280939291908181526020018383602002808284376000920191909152507f000000000000000000000000000000000000000000000000000000000000000092508591506103249050565b6101935760405162461bcd60e51b81526004016100df906105b9565b61019c866103df565b60405163a9059cbb60e01b81526001600160a01b037f0000000000000000000000000000000000000000000000000000000000000000169063a9059cbb906101ea9088908890600401610544565b602060405180830381600087803b15801561020457600080fd5b505af1158015610218573d6000803e3d6000fd5b505050506040513d601f19601f8201168201806040525081019061023c919061041d565b6102585760405162461bcd60e51b81526004016100df906105fa565b7f4ec90e965519d92681267467f775ada5bd214aa92c0dc93d90a5e880ce9ed02686868660405161028b9392919061063d565b60405180910390a1505050505050565b7f000000000000000000000000000000000000000000000000000000000000000081565b6000806102ce6101008461065c565b905060006102de61010085610697565b60009283526020839052604090922054600190921b9182169091149392505050565b7f000000000000000000000000000000000000000000000000000000000000000081565b600081815b85518110156103d457600086828151811061035457634e487b7160e01b600052603260045260246000fd5b602002602001015190508083116103955782816040516020016103789291906104fa565b6040516020818303038152906040528051906020012092506103c1565b80836040516020016103a89291906104fa565b6040516020818303038152906040528051906020012092505b50806103cc81610670565b915050610329565b509092149392505050565b60006103ed6101008361065c565b905060006103fd61010084610697565b6000928352602083905260409092208054600190931b9092179091555050565b60006020828403121561042e578081fd5b8151801515811461043d578182fd5b9392505050565b600060208284031215610455578081fd5b5035919050565b600080600080600060808688031215610473578081fd5b8535945060208601356001600160a01b0381168114610490578182fd5b935060408601359250606086013567ffffffffffffffff808211156104b3578283fd5b818801915088601f8301126104c6578283fd5b8135818111156104d4578384fd5b89602080830285010111156104e7578384fd5b9699959850939650602001949392505050565b918252602082015260400190565b92835260609190911b6bffffffffffffffffffffffff19166020830152603482015260540190565b6001600160a01b0391909116815260200190565b6001600160a01b03929092168252602082015260400190565b901515815260200190565b90815260200190565b60208082526028908201527f4d65726b6c654469737472696275746f723a2044726f7020616c72656164792060408201526731b630b4b6b2b21760c11b606082015260800190565b60208082526021908201527f4d65726b6c654469737472696275746f723a20496e76616c69642070726f6f666040820152601760f91b606082015260800190565b60208082526023908201527f4d65726b6c654469737472696275746f723a205472616e73666572206661696c60408201526232b21760e91b606082015260800190565b9283526001600160a01b03919091166020830152604082015260600190565b60008261066b5761066b6106ab565b500490565b600060001982141561069057634e487b7160e01b81526011600452602481fd5b5060010190565b6000826106a6576106a66106ab565b500690565b634e487b7160e01b600052601260045260246000fdfea2646970667358221220f45e651427c3cc1bfa0694b5e3f890162b28e683be4cbe0f9dbd9ecabb4415eb64736f6c63430008000033",
+  "devdoc": {
+    "kind": "dev",
+    "methods": {},
+    "version": 1
+  },
+  "userdoc": {
+    "kind": "user",
+    "methods": {},
+    "version": 1
+  },
+  "storageLayout": {
+    "storage": [
+      {
+        "astId": 822,
+        "contract": "contracts/MerkleDistributor.sol:MerkleDistributor",
+        "label": "claimedBitMap",
+        "offset": 0,
+        "slot": "0",
+        "type": "t_mapping(t_uint256,t_uint256)"
+      }
+    ],
+    "types": {
+      "t_mapping(t_uint256,t_uint256)": {
+        "encoding": "mapping",
+        "key": "t_uint256",
+        "label": "mapping(uint256 => uint256)",
+        "numberOfBytes": "32",
+        "value": "t_uint256"
+      },
+      "t_uint256": {
+        "encoding": "inplace",
+        "label": "uint256",
+        "numberOfBytes": "32"
+      }
+    }
+  }
+}
