@@ -1,14 +1,13 @@
 # Basic Sample Hardhat Project
 
-<<<<<<< HEAD
 This project demonstrates a basic Hardhat use case. It comes with a sample contract, a test for that contract, a sample script that deploys that contract, and an example of a task implementation, which simply lists the available accounts.
-=======
+
 ## Run the program
 Install the dependencies using npm or yarn.
 Then, run node events.js (This will take some time to run)
 
 It will generate rewards.json which contains the data needed to build a merkle distribution tree
->>>>>>> 9e29e8e111271c11de2b8a24bdec6689fe46d532
+
 
 Try running some of the following tasks:
 
@@ -22,7 +21,6 @@ node scripts/sample-script.js
 npx hardhat help
 ```
 
-<<<<<<< HEAD
 # PENDLE-reward-distribution
 ### Steps needed to generate the merkle tree (optional)
 ### Make sure all the packages are installed
@@ -46,4 +44,4 @@ yarn test
 =======
 ### To run the test on deploying and claim
 yarn test
->>>>>>> 9e29e8e111271c11de2b8a24bdec6689fe46d532
+
